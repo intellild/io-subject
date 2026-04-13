@@ -12,4 +12,7 @@ export default defineConfig({
       syntax: ['node 18'],
     },
   ],
+  source: {
+    tsconfigPath: './tsconfig.lib.json',
+  },
 });

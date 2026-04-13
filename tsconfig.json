@@ -1,14 +1,24 @@
 {
   "compilerOptions": {
-    "lib": ["ES2022"],
+    "lib": ["DOM", "ES2024"],
     "noEmit": true,
     "skipLibCheck": true,
-    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true,
-    "rootDir": "src"
+    "allowImportingTsExtensions": true
   },
-  "include": ["src"]
+  "include": [],
+  "references": [
+    {
+      "path": "tsconfig.lib.json"
+    },
+    {
+      "path": "tsconfig.test.json"
+    },
+    {
+      "path": "tsconfig.examples.json"
+    }
+  ]
 }
