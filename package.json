@@ -1,6 +1,10 @@
 {
   "name": "io-subject",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intellild/io-subject.git"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -20,14 +24,18 @@
     "dev": "rslib --watch",
     "format": "biome format --write",
     "test": "rstest",
-    "test:watch": "rstest --watch"
+    "test:watch": "rstest --watch",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.9",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
     "@rslib/core": "^0.21.0",
     "@rstest/adapter-rslib": "^0.2.2",
     "@rstest/core": "^0.9.6",
     "@types/node": "^24.12.2",
+    "husky": "^9.1.7",
     "rxjs": "^7.8.2",
     "typescript": "^6.0.2"
   },
