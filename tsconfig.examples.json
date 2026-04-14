@@ -2,7 +2,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "composite": true,
-    "rootDir": "."
+    "rootDir": "examples"
   },
-  "include": ["examples"]
+  "include": ["examples"],
+  "references": [
+    {
+      "path": "tsconfig.lib.json"
+    }
+  ]
 }

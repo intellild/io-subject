@@ -4,5 +4,10 @@
     "composite": true,
     "rootDir": "test"
   },
-  "include": ["test"]
+  "include": ["test"],
+  "references": [
+    {
+      "path": "tsconfig.lib.json"
+    }
+  ]
 }
